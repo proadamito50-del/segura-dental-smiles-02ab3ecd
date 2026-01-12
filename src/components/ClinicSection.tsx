@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import clinicImage from "@/assets/clinic-video-placeholder.jpg";
 
 const ClinicSection = () => {
-  // Video URL from user
-  const videoUrl = "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhVPDLOnOf0UUDpcMQt-OXPTCs-W9UDEYJ4yh3oKZ4aVHbIATsd8yAw91pnuiBUFSzvrIZica1WIw7rQbvC2ZVpCO-dwN88tzxfUOEcl74-ZO1SuCR8p11C1eCQuvX9ESMA6SB=w141-h176-n-k-no-nu";
-
   const features = [
     { number: "20+", label: "Años de experiencia" },
     { number: "5000+", label: "Pacientes atendidos" },
@@ -13,10 +10,10 @@ const ClinicSection = () => {
   ];
 
   return (
-    <section id="clinica" className="py-20 lg:py-28 bg-secondary/30">
+    <section id="clinica" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Video */}
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -24,23 +21,13 @@ const ClinicSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-muted aspect-video">
-              <video
-                src={videoUrl}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={clinicImage}
+                alt="Clínica Dental del Segura"
+                className="w-full h-full object-cover aspect-[4/3]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-              
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 dental-gradient rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-transform">
-                  <Play className="w-8 h-8 text-primary-foreground ml-1" />
-                </div>
-              </div>
             </div>
           </motion.div>
 
