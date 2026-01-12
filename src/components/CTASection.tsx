@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, MapPin, Clock } from "lucide-react";
 
 const CTASection = () => {
-  const whatsappLink = "https://wa.me/34968231632?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
+  const whatsappLink = "https://wa.me/34626749685?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
 
   return (
     <section id="contacto" className="py-20 lg:py-28 bg-background">
@@ -46,7 +46,7 @@ const CTASection = () => {
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
               >
-                <a href="tel:968231632">
+                <a href="tel:626749685">
                   <Phone className="w-5 h-5 mr-2" />
                   Llamar Ahora
                 </a>
