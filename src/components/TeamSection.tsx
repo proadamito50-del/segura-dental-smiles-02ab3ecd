@@ -60,20 +60,12 @@ const TeamSection = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group"
             >
-              <div className="relative overflow-hidden rounded-3xl mb-6 aspect-square">
+              <div className="relative overflow-hidden rounded-3xl aspect-square">
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-semibold text-foreground mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-medium mb-1">{member.role}</p>
-                <p className="text-muted-foreground text-sm">{member.specialty}</p>
               </div>
             </motion.div>
           ))}
