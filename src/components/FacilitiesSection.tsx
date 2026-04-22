@@ -1,22 +1,17 @@
 import { motion } from "framer-motion";
 import facilityVideo from "@/assets/facility-feature-video.mov";
-import facility1 from "@/assets/facility-1.jpg";
-import facility2 from "@/assets/facility-2.jpg";
-import facility3 from "@/assets/facility-3.jpg";
-import facility4 from "@/assets/facility-4.jpg";
-import facility5 from "@/assets/facility-5.jpg";
-import facility6 from "@/assets/facility-6.jpg";
-import facility7 from "@/assets/facility-7.jpg";
+import facilityRight1 from "@/assets/facility-right-1.jpeg";
+import facilityRight2 from "@/assets/facility-right-2.jpeg";
+import facilityRight3 from "@/assets/facility-right-3.jpeg";
+import facilityRight4 from "@/assets/facility-right-4.jpeg";
 
 const FacilitiesSection = () => {
   const facilities = [
     { video: facilityVideo, alt: "Vídeo de tecnología y confort en clínica dental" },
-    { image: facility2, alt: "Equipamiento dental" },
-    { image: facility3, alt: "Sala de espera" },
-    { image: facility4, alt: "Gabinete dental" },
-    { image: facility5, alt: "Recepción" },
-    { image: facility6, alt: "Consulta dental" },
-    { image: facility7, alt: "Instalaciones modernas" },
+    { image: facilityRight1, alt: "Gabinete dental con sillón azul" },
+    { image: facilityRight2, alt: "Consulta dental con sillón naranja" },
+    { image: facilityRight3, alt: "Sala de espera de la clínica" },
+    { image: facilityRight4, alt: "Fachada de Clínica Dental del Segura" },
   ];
 
   return (
