@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import facilityVideo from "@/assets/facility-feature-video.mov";
 import facility1 from "@/assets/facility-1.jpg";
 import facility2 from "@/assets/facility-2.jpg";
 import facility3 from "@/assets/facility-3.jpg";
@@ -9,7 +10,7 @@ import facility7 from "@/assets/facility-7.jpg";
 
 const FacilitiesSection = () => {
   const facilities = [
-    { image: facility1, alt: "Sala de tratamientos" },
+    { video: facilityVideo, alt: "Vídeo de tecnología y confort en clínica dental" },
     { image: facility2, alt: "Equipamiento dental" },
     { image: facility3, alt: "Sala de espera" },
     { image: facility4, alt: "Gabinete dental" },
@@ -55,13 +56,25 @@ const FacilitiesSection = () => {
                 index === 0 ? "col-span-2 row-span-2" : ""
               }`}
             >
-              <img
-                src={facility.image}
-                alt={facility.alt}
-                className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${
-                  index === 0 ? "h-full aspect-square" : "aspect-square"
-                }`}
-              />
+              {facility.video ? (
+                <video
+                  src={facility.video}
+                  aria-label={facility.alt}
+                  className={`w-full object-cover ${index === 0 ? "h-full aspect-square" : "aspect-square"}`}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              ) : (
+                <img
+                  src={facility.image}
+                  alt={facility.alt}
+                  className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+                    index === 0 ? "h-full aspect-square" : "aspect-square"
+                  }`}
+                />
+              )}
             </motion.div>
           ))}
         </div>
