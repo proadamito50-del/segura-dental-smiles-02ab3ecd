@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
-  const whatsappLink = "https://wa.me/34968231632?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
+  const whatsappLink = "https://wa.me/34626749685?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
 
   return (
     <motion.a
