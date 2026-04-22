@@ -57,6 +57,12 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
+            <div className="mb-4 text-center lg:text-left">
+              <p className="text-base font-semibold text-primary md:text-lg">
+                Agenda tu cita ahora y consigue tu revisión gratuita
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
                 asChild 
