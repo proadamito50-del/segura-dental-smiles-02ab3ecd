@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import team1 from "@/assets/team-1-new.jpeg";
-import team2 from "@/assets/team-2.jpg";
+import team2 from "@/assets/team-2-new.jpeg";
 import team3 from "@/assets/team-3.jpg";
 
 const TeamSection = () => {
