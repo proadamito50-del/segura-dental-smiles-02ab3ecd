@@ -56,19 +56,6 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <div className="mb-8 flex justify-center lg:justify-start">
-              <Button
-                asChild
-                size="lg"
-                className="dental-gradient hover:opacity-90 transition-opacity text-lg px-8 py-6"
-              >
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Agenda una revisión gratuita ahora
-                </a>
-              </Button>
-            </div>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
