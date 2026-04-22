@@ -14,7 +14,7 @@ const Header = () => {
     { href: "#contacto", label: "Contacto" },
   ];
 
-  const whatsappLink = "https://wa.me/34968231632?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
+  const whatsappLink = "https://wa.me/34626749685?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">

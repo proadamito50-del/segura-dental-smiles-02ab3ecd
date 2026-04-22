@@ -91,7 +91,7 @@ const CTASection = () => {
                 size="lg"
                 className="bg-background text-primary hover:bg-background/90 text-lg px-8 py-6"
               >
-                <a href="tel:626749685">
+                <a href="tel:968231632">
                   <Phone className="w-5 h-5 mr-2" />
                   Llamar Ahora
                 </a>

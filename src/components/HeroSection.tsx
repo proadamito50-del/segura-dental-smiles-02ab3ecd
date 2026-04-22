@@ -4,7 +4,7 @@ import { MessageCircle, Calendar, Shield, Award } from "lucide-react";
 import heroImage from "@/assets/hero-clinica.jpg";
 
 const HeroSection = () => {
-  const whatsappLink = "https://wa.me/34968231632?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
+  const whatsappLink = "https://wa.me/34626749685?text=Hola,%20me%20gustaría%20solicitar%20una%20cita";
 
   const features = [
     { icon: Shield, text: "Máxima seguridad" },
