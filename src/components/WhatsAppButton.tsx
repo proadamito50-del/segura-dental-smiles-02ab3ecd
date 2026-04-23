@@ -14,9 +14,15 @@ const WhatsAppButton = () => {
       transition={{ delay: 1, type: "spring" }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 right-6 z-50 block h-16 w-16 overflow-hidden rounded-full transition-transform"
+      className="fixed bottom-6 right-6 z-50 block h-16 w-16 overflow-visible rounded-full transition-transform"
       aria-label="Contactar por WhatsApp"
     >
+      <img
+        src={whatsappOfficial}
+        alt=""
+        aria-hidden="true"
+        className="absolute -inset-1 -z-10 h-[calc(100%+0.5rem)] w-[calc(100%+0.5rem)] animate-ping object-cover opacity-30"
+      />
       <img
         src={whatsappOfficial}
         alt="WhatsApp"
