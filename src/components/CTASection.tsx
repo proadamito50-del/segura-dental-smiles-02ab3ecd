@@ -11,7 +11,7 @@ const CTASection = () => {
     { day: "Jueves", hours: "10:00-14:00 · 17:00-21:00" },
     { day: "Viernes", hours: "10:00-14:00" },
   ];
-  const fullAddress = "s/n Bajo, C. Torre Álvarez, 30007 Murcia";
+  const fullAddress = "Clínica Dental del Segura, s/n Bajo, C. Torre Álvarez, 30007 Murcia";
   const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(fullAddress)}&output=embed`;
 
   return (
