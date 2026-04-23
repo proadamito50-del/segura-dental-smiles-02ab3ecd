@@ -14,15 +14,14 @@ const WhatsAppButton = () => {
       transition={{ delay: 1, type: "spring" }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-shadow hover:shadow-xl"
+      className="fixed bottom-6 right-6 z-50 block h-16 w-16 overflow-hidden rounded-full transition-transform"
       aria-label="Contactar por WhatsApp"
     >
       <img
         src={whatsappOfficial}
         alt="WhatsApp"
-        className="h-full w-full object-contain"
+        className="block h-full w-full object-cover"
       />
-      <span className="absolute inset-0 -z-10 rounded-full bg-[#25D366] animate-ping opacity-30" />
     </motion.a>
   );
 };
