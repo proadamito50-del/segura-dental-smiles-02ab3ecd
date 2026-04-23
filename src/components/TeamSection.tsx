@@ -61,11 +61,6 @@ const TeamSection = () => {
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="mt-5 text-center">
-                <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
-                <p className="text-primary font-medium">{member.role}</p>
-                <p className="text-sm text-muted-foreground mt-1">{member.specialty}</p>
-              </div>
             </motion.div>
           ))}
         </div>
