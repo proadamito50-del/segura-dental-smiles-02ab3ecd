@@ -12,12 +12,6 @@ const TeamSection = () => {
       specialty: "Especialista en Implantología",
     },
     {
-      image: team2,
-      name: "Dr. Carlos Martínez",
-      role: "Odontólogo",
-      specialty: "Especialista en Ortodoncia",
-    },
-    {
       image: team3,
       name: "Dra. Ana López",
       role: "Odontóloga",
@@ -50,7 +44,7 @@ const TeamSection = () => {
         </motion.div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <motion.div
               key={index}
@@ -60,12 +54,17 @@ const TeamSection = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group"
             >
-              <div className="relative overflow-hidden rounded-3xl aspect-square">
+              <div className="relative overflow-hidden rounded-3xl aspect-[4/5]">
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
+              </div>
+              <div className="mt-5 text-center">
+                <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                <p className="text-primary font-medium">{member.role}</p>
+                <p className="text-sm text-muted-foreground mt-1">{member.specialty}</p>
               </div>
             </motion.div>
           ))}
