@@ -4,6 +4,7 @@ import facilityRight1 from "@/assets/facility-right-1.jpeg";
 import facilityRight2 from "@/assets/facility-right-2.jpeg";
 import facilityRight3 from "@/assets/facility-right-3.jpeg";
 import facilityRight4 from "@/assets/facility-right-4.jpeg";
+import facilityRight5 from "@/assets/facility-right-5.jpg";
 
 const FacilitiesSection = () => {
   const facilities = [
@@ -12,6 +13,7 @@ const FacilitiesSection = () => {
     { image: facilityRight2, alt: "Consulta dental con sillón naranja" },
     { image: facilityRight3, alt: "Sala de espera de la clínica" },
     { image: facilityRight4, alt: "Fachada de Clínica Dental del Segura" },
+    { image: facilityRight5, alt: "Gabinete dental con sillón amarillo" },
   ];
 
   return (
