@@ -92,16 +92,19 @@ const Footer = () => {
               </li>
             </ul>
 
-            {/* Social */}
             <div className="flex gap-3 mt-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/clinicadentaldelsegura" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-dental-medium transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/clinicadentaldelsegura/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-dental-medium transition-colors"
               >
                 <Instagram className="w-5 h-5" />
